@@ -1,13 +1,12 @@
-const counter = document.querySelector(`.counterr`);
 
-let initilCounter =0;
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
 
-function increment(){
-  initilCounter ++;
-  counter.innerHTML = initilCounter;
-}
 
-function reset(){
-  initilCounter = 0;
-  counter.innerHTML = initilCounter;
+function toggleMenu() {
+  
+    const nav = document.querySelector('.nav-links');
+    
+    
+    nav.classList.toggle('nav-active');
 }
