@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>visa</title>
+  <title>Visa Card Registration</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
   <div class="register">
-    <input id="inpCard" class="inpCard" placeholder="Card Number" type="text">
     
- 
-    <input id="Holder" class="Holder" placeholder="Card Holder" type="text">
+    <div class="card-preview">
+      <div class="card-logo">VISA</div>
+      <div class="card-number-preview" id="prevNumber">#### #### #### ####</div>
+      
+      <div class="card-bottom">
+        <div class="card-info">
+          <span>Card Holder</span>
+          <div id="prevHolder">FULL NAME</div>
+        </div>
+        <div class="card-info">
+          <span>Expires</span>
+          <div id="prevDate">MM/YY</div>
+        </div>
+      </div>
+    </div>
 
-    <input id="date" class="date" type="date">
+    <div class="inputs-container">
+      <input id="inpCard" class="input-field" placeholder="Card Number" type="text" maxlength="19" oninput="updateCard()">
+      <input id="Holder" class="input-field" placeholder="Card Holder" type="text" oninput="updateCard()">
+      
+      <div class="row">
+        <input id="date" class="input-field half" type="month" oninput="updateCard()">
+        <input id="cvv" class="input-field half" placeholder="CVV" type="password" maxlength="3">
+      </div>
+      
+      <button onclick="getInfo()" class="button">Send</button>
+    </div>
     
-   
-    <input id="cvv" class="cvv" type="number">
-    
-    <button onclick="getInfo()" class="button">Send</button>
-    <div class="wrapper"></div>
-</div>
+  </div>
+  
+  <div class="wrapper"></div>
+
   <script src="./index.js"></script>
 </body>
-
 </html>
