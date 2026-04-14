@@ -10,28 +10,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 150px; /* Отступ сверху, чтобы карточка поместилась */
+    padding-top: 150px; 
 }
 
-/* Основной контейнер формы */
+
 .register {
     width: 400px;
     background-color: white;
     position: relative;
     border-radius: 15px;
-    padding: 120px 30px 30px 30px; /* Большой верхний padding для карточки */
+    padding: 120px 30px 30px 30px; 
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Дизайн самой карточки поверх формы */
 .card-preview {
     width: 340px;
     height: 210px;
-    /* Если у вас есть фото карточки, раскомментируйте строку ниже и удалите background: linear-gradient */
-    /* background-image: url('ваше-фото.jpg'); background-size: cover; */
     background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
     position: absolute;
-    top: -80px; /* Выдвигаем карточку вверх за пределы формы */
+    top: -80px; 
     left: 30px;
     border-radius: 15px;
     color: white;
@@ -72,7 +69,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* Стилизация полей ввода */
+
 .inputs-container {
     display: flex;
     flex-direction: column;
@@ -119,7 +116,7 @@ body {
     background-color: #333;
 }
 
-/* Стили для сгенерированных карточек внизу */
+
 .wrapper {
     margin-top: 50px;
     display: flex;
